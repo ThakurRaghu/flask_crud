@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Flask - SQLite </title>
+  </head>
+  <body>
+  <center>
+    <h3 style="color:Brown">Add user</h3><hr>
+      <form method='post' action='{{url_for("add_user")}}'>
+    <table border="1">
+      <tr>
+        <th>UserName</th>
+        <th><input type='text' name='uname' required></th>
+      </tr>
+       <tr>
+        <th>Email</th>
+        <th><input type='email' name='email' required></th>
+      </tr>
+       <tr>
+        <th>Contact</th>
+        <th><input type='tel' name='contact' required></th>
+      </tr>
+       <tr>
+        <th>Age</th>
+        <th><input type='number' name='age' required></th>
+      </tr>
+
+        <th style="text-align: center"><input type='submit' value='Submit' class='btn btn-primary'></th>
+
+    </table>
+    </form>
+  </center>
+  </body>
+</html>
